@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+    <!-- <aside>
+      <div id="map"></div>
+      <div class="credits">
+        <span>Studio Alloy</span>
+      </div>
+    </aside> -->
+  </main>
+
+  {% include footer.html %}
+
+</body>
+
+</html>

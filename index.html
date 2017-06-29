@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<div class="intro">
+  <div class="brand">
+    <img src="{{site.url}}{{site.baseurl}}/assets/kaaswinkeltje_logo.svg" alt="{{site.title}} logo" class="logo">
+    <h1>{{site.title}} <span>{{site.tagline}}</span></h1>
+  </div>
+</div>
+
+<div id="about">
+  <div class="inner">
+    {{site.description}}
+  </div>
+</div>
+
+<div id="kazen" >
+  <div class="inner">
+
+    <div class="kaas">
+      <img src="{{site.url}}{{site.baseurl}}/assets/neusje-van-de-zalm.jpg" alt="">
+      <h2>Neusje van de Zalm</h2>
+    </div>
+
+    <div class="kaas">
+      <img src="{{site.url}}{{site.baseurl}}/assets/haarlems-zoetje.jpg" alt="">
+      <h2>Haarlems Zoetje</h2>
+    </div>
+
+  </div>
+</div>
+
+<div id="contact">
+  <div class="inner">
+
+    <div class="maps">
+      <iframe
+      width="100%"
+      height="450"
+      frameborder="0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC7b0ZWpPv3iwKEz20S0Uxt3owu1HNCQCk
+      &q='t+Kaaswinkeltje,Koningstraat,Haarlem" allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="openingstijden">
+    <h2>Contact</h2>
+    <address class="">
+      {{site.address}}
+    </address>
+    <p>{{site.phone}}</p>
+    <p>{{site.email}}</p>
+
+    <h2>Openingstijden</h2>
+    {{site.openingstijden}}
+  </div>
+
+</div>
+</div>

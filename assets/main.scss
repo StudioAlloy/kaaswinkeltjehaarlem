@@ -1,0 +1,171 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: 'Dosis', sans-serif;
+
+$base-font-size:   18px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$brand-dark:       #5F5E5C;
+$brand-light:      #D1CFCC;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: $brand-dark;
+  font-size: $base-font-size;
+  line-height: 1.6em;
+}
+h1, h2, h3, h4 {
+  margin-top: 0;
+  font-family: $base-font-family;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+header {
+	text-align: justify;
+  padding: 15px 15px 0 15px;
+  &:after {
+  	content: '';
+  	display: inline-block;
+  	width: 100%;
+  }
+
+  > * {
+  	display: inline-block;
+    vertical-align: middle;
+  }
+  .logo {
+    display: inline-block;
+    width: 60px;
+  }
+  nav {
+    a {
+      font-family: $base-font-family;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      text-decoration: none;
+      color: $brand-dark;
+    }
+  }
+}
+main {
+  // display: flex;
+}
+.wrapper {
+  // padding-right: 350px;
+  width: 100%;
+  // flex-grow: 2;
+  .inner {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.intro {
+  background-image: url(/assets/kaaswinkeltje.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  // height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(255,255,255,.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  .brand {
+    position: relative;
+    z-index: 9;
+  }
+  .logo {
+    display: inline-block;
+    max-width: 200px;
+  }
+ h1 {
+   span {
+     margin-top: 15px;
+     display: block;
+     font-size: .6em;
+
+   }
+ }
+}
+.kaas {
+  img {
+    border-radius: 50%;
+    border: 4px solid;
+    max-width: 200px;
+  }
+}
+iframe {
+  border: 10px solid #eee;
+}
+@media screen and (min-width: 1200px) {
+  .openingstijden {
+    padding-left: 30px;
+  }
+  .inner {
+    > * {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+    }
+  }
+  #kazen {
+    .kaas {
+      // display: inline-block;
+      // width: 49%;
+      text-align: center;
+    }
+  }
+  // aside {
+  //   position: fixed;
+  //   height: 100vh;
+  //   right: 0;
+  //   top: 0;
+  //   #map {
+  //     width: 350px;
+  //     height: 90%;
+  //   }
+  // }
+}
+footer {
+  padding: 15px;
+  background-color: $brand-dark;
+  text-align: center;
+  color: #fff;
+}
